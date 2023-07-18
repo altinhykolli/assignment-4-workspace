@@ -7,8 +7,6 @@ data "aws_vpc" "this" {
 resource "aws_s3_bucket" "static_website" {
   bucket = "altin-assignment-4.appstellar.training"
 
-  acl = "public-read"
-
   website {
     index_document = "index.html"
   }

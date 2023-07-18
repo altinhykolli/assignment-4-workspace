@@ -35,8 +35,8 @@ resource "aws_route53_record" "subdomain" {
 
 resource "aws_cloudfront_distribution" "cdn" {
   origin {
-    domain_name              = local.cdn_domain
-    origin_id                = local.s3_origin_id
+    domain_name = aws_s3_bucket.static_website.website_endpoint
+    origin_id   = "S3-Website"
   }
 
   enabled             = true

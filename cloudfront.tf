@@ -1,6 +1,6 @@
 locals {
   s3_origin_id = "myS3Origin"
-  domain_name = "altin-assignment-4.appstellar.training"
+  domain_name = "altin-assignment-4.s3.eu-central-1.amazonaws.com"
 }
 
 resource "aws_acm_certificate" "my_certificate" {

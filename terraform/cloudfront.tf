@@ -16,7 +16,7 @@ module "web_client_cdn" {
 
   origin = {
     s3_web_client = {
-      domain_name = module.s3_bucket_bucket_domain_name
+      domain_name = module.web_client.s3_bucket_bucket_domain_name
       s3_origin_config = {
         origin_access_identity = "s3_web_client"
       }

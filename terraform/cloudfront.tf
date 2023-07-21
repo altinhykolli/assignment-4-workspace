@@ -39,9 +39,6 @@ default_cache_behavior = {
     max_ttl     = 31536000
   }
 
-
- 
- 
   #   viewer_certificate = {
   #     acm_certificate_arn = "arn:aws:acm:us-east-1:135367859851:certificate/1032b155-22da-4ae0-9f69-e206f825458b"
   #     ssl_support_method  = "sni-only"

@@ -39,8 +39,8 @@ default_cache_behavior = {
     max_ttl     = 31536000
   }
 
-#       viewer_certificate = {
-#       acm_certificate_arn = module.acm_certificate_arn
-#       ssl_support_method  = "sni-only"
-#     }
+       viewer_certificate = {
+       acm_certificate_arn = module.acm.acm_certificate_arn
+       ssl_support_method  = "sni-only"
+     }
 }

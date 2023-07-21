@@ -12,3 +12,10 @@ provider "aws" {
   access_key = var.access_key
   secret_key = var.secret_key
 }
+
+/* provider "argocd" {
+  server_addr = local.argocd_host
+  # auth_token  = var.argocd_auth_token
+  username = var.argocd_username
+  password = var.argocd_password
+} */

@@ -6,6 +6,6 @@ locals {
     "*.appstellar.training",
     "*.altin.appstellar.training"
   ]
-  argocd_host          = ""
-  eks_cluster_endpoint = ""
+/*   argocd_host          = "argocd.appstellar.training"
+  eks_cluster_endpoint = "https://kubernetes.default.svc" */
 }

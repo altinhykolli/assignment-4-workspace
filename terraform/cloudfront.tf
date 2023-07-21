@@ -1,5 +1,5 @@
 resource "aws_cloudfront_origin_access_control" "web_client" {
-  name                              = "tali_web_client_oac"
+  name                              = "altin_web_client_oac"
   description                       = "Grant access to s3 media bucket"
   origin_access_control_origin_type = "s3"
   signing_behavior                  = "always"
